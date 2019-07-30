@@ -1,2 +1,2 @@
 # portfolio
-My Portfolio website made with CSS and HTML
+My Portfolio website using HTML, CSS and Javascript (without any frameworks).
