@@ -1,0 +1,496 @@
+/* Extra small devices (phones, 600px and down) */
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box; 
+}
+
+body{
+	
+	overflow-x: hidden;
+	font-family: 'Roboto Mono', monospace;
+
+
+}
+h2{
+	text-shadow: 2px 2px 4px #0f0f0f;
+	padding-top:40px;
+	padding-bottom: 30px;
+
+}
+section{
+	
+	
+	text-align: center;
+	
+}
+
+/* Navigation Bar*/
+
+.navbar {
+	background-color: black;
+	position:fixed;
+	top:0;
+	z-index:1;
+	width: 100%;
+	padding-top:15px;
+	padding-bottom: auto;
+}
+header .navLinks{
+	list-style: none;
+	
+
+}
+
+
+
+header .navLinks li a{
+	color:white;
+	padding-right:25px;
+	font-size: 1.2em;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+
+	text-decoration:none;
+}
+
+
+header .navLinks li a:hover{
+	color:yellow;
+	cursor:pointer;
+}
+
+
+header .navLinks{
+	display:flex;
+	flex-direction: row;
+    justify-content:flex-end; 
+    margin-right:auto;
+
+
+}
+
+/***Burger Menu icon--active in small screen size only**/
+.burgerMenu div{
+	width:25px;
+	height:3px;
+	margin-bottom:8px;
+	background-color: white;
+
+}
+
+.burgerMenu{
+    position:fixed;
+	margin-top: 6px;
+	margin-left:93%;
+	display:none;
+
+}
+
+.burgerMenu:hover{
+   cursor: pointer;
+}
+
+
+/*Home Page*/
+#landingContainer{
+	position:relative;
+	align-content: center;
+	height:100vh;
+	width:auto;
+}
+
+#landingContainer img{
+	width:100%;
+	height: 100vh;
+	opacity:0.6;
+	filter: blur(10px);
+
+
+}
+
+#landingContainer .landingText {
+	
+
+	position:absolute;
+	left:30%;
+	top:35%;
+	
+	height:auto;
+	margin-bottom: 100px;
+	width:auto;
+}
+
+#landingContainer h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 2.81em;
+	padding:10px 10px;
+	color: black;
+	text-shadow: 2px 2px 4px #0f0f0f;
+	text-align: left;
+	letter-spacing: .1em;
+
+
+}
+
+
+
+#landingContainer .landingText button{
+		
+	background-color: transparent;
+	border:2px solid yellow;
+	
+	border-radius: 10px;
+	
+	padding:8px 15px;
+	text-align: center;
+	font-size: 1.35em;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: .2em;
+	color: black;
+	cursor:pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position:absolute;
+	left:20%;
+	top:100%;
+	
+	
+
+
+}
+#landingContainer button a{
+	text-decoration: none;
+	color:black;
+}
+#landingContainer button:hover{
+	background-color: rgba(255, 255, 0,0.8);
+	border:2px solid white;/	.
+}
+
+/*About Me */
+#aboutMe{
+	background-color: #ccc;
+	text-align: center;
+
+}
+#aboutMe h2{
+	padding-top: 40px;
+	padding-bottom:20px;
+	font-family: 'Roboto Mono', monospace;
+
+
+}
+#aboutMe p{
+	text-align: center;
+	font-size: 1.1em;
+	font-family: 'Roboto Mono', monospace;
+	padding-bottom:50px;
+
+
+}
+
+/*Skills*/
+
+.skills{
+	background-color: white;
+	text-align: center;
+	margin-bottom: 60px;
+
+
+	
+
+	
+}
+.skills h2{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color:black;
+	margin-top:20px;
+	font-family: 'Roboto Mono', monospace;
+
+
+}
+.iconCard p{
+	font-family: 'Signika', sans-serif;
+	letter-spacing: .2em;
+}
+.skillsFlexContainer{
+	
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.iconCard{
+	background-color: rgba(255, 255, 0,0.6);
+	padding:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 45px;
+}
+.skills h3{
+	padding:10px 10px;
+}
+
+/*projects*/
+.projects{
+	background-color: rgba(255, 255, 0,0.5);
+	margin-bottom: 0px;
+}
+.projectsFlexContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.projectCard button {
+  background-color: #3f3f3f; 
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.disabled{
+	opacity:0.8;
+	cursor:not-allowed !important;
+
+}
+div.projectCard {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+  margin:25px;
+
+}
+.projectCard img{
+	height:50%;
+}
+
+div.detailsContainer {
+  padding: 10px;
+}
+div.detailsContainer button a{
+	text-decoration:none;
+	color:white;
+
+}
+div.projects{
+	
+	padding-bottom: 50px;
+}
+
+
+/*footer*/
+footer section{
+	background-color: grey;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+footer a{
+	text-decoration: none;
+	color:black;
+}
+
+footer a:hover{
+	color:yellow;
+}
+
+div.copyright{
+	
+	color:rgba(0,0,0,0.5);
+}
+
+/*****menu icon testing*****
+
+.iconMenu, .iconClose{
+
+
+	position:fixed;
+	margin-top: 0px;
+	margin-left:92%;
+
+	
+
+}
+
+
+.iconMenu a{
+	color:white;
+}
+.iconMenu:hover{
+		color:yellow;
+		cursor:pointer;
+		
+}
+.iconMenu{
+	display: none;
+}
+.iconClose{
+	display:none;
+}
+***********/
+
+
+/****** For small screen devices***/
+/**** To make navigation menu responsive***/
+
+@media screen and (max-width: 768px) {
+	
+   .navbar{
+  		height:10vh;
+  }
+  
+  
+  
+  .navLinks{
+  	  	background-color: rgba(0,0,0,0.9);
+  	  	
+     	position: absolute;
+  	    right:0px;
+  	    top:8vh;
+  	    height:300px;
+  	    width:50%;
+  	    display: flex;
+		
+	    flex-direction: column !important;
+	    align-items: center !important;
+	    justify-content: space-around !important;
+	    transform: translateX(100%);
+	    transition: transform 0.5s ease-in;
+
+	    
+	    
+
+    
+  	
+  	
+  }
+
+  .burgerMenu{
+  	display:block;
+  }
+  .nav-active{
+  	transform:translateX(0%);
+
+  }
+  .navLinks li{
+  	
+  	width:100%;
+  	/*border:3px solid green;  for testing*/
+  	padding:10px;
+  	
+  }
+  .navLinks li a{
+  	
+  	padding:auto;
+  
+  }
+  
+  
+
+.toggle .line1{
+	
+	transform: rotate(-45deg) translateY(16px);
+
+	/*translate(-5px,6px); */
+	width:25px;
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	
+	
+	width:25px;
+	transform: rotate(45deg) translateY(-16px); /*translate(-5px,-6px);*/
+}
+#landingContainer h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	padding:10px 10px;
+	color: black;
+	text-shadow: 1px 1px 4px #0f0f0f;
+	text-align: left;
+	letter-spacing: .1em;
+
+
+}
+
+
+
+#landingContainer .landingText button{
+		
+	background-color: transparent;
+	border:2px solid yellow;
+	
+	border-radius: 10px;
+	
+	padding:4px 7px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: .1em;
+	color: black;
+	cursor:pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position:absolute;
+	left:20%;
+	top:100%;
+	
+	
+
+
+}
+
+
+}
+/*
+  @-webkit-keyframes navlinksFadeAnimation{
+  	from{
+  		opacity:0;
+  		transform:translateX(50px);
+  	}
+  	to{
+  		opacity:1;
+  		transform:translateX(0px);
+  	}
+  }
+  @-webkit-keyframes navlinksFadeAnimation{
+  	from{
+  		opacity:0;
+  		transform:translateX(50px);
+  	}
+  	to{
+  		opacity:1;
+  		transform:translateX(0px);
+  	}
+  }
+  */
+
+  
+
+  	/*
+  	height:50vh;
+  	width:60%;
+  }
+  .navLinks li a{
+  	display:block;
+  	width:auto;
+  	height:40px;
+
+  }
+
+}
